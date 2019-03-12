@@ -124,8 +124,8 @@ header {
     top: 0;
     right: 0;
     left: 0;
-    /* background-color: #eee; 
-    opacity: 0.9; */
+    background-color: #eee; 
+    opacity: 0.9;
     width: 100%;
     height: 100px;
 }
@@ -267,9 +267,9 @@ header nav ul li a {
 
 /*** EXPERIENCE ***/
 
-.experience {
+/* .experience {
     height: 100vh;
-}
+} */
 
 .experience h2 {
     font-family: Overpass;
@@ -302,6 +302,7 @@ header nav ul li a {
 
 .projects, .organisations {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     flex-direction: row;
 }
@@ -309,13 +310,16 @@ header nav ul li a {
 .box {
     position: relative;
     overflow: hidden;
-    width: 240px;
     background-color: #fff;
 
     /* margin: 16px 16px 0; */
     /* background-repeat: no-repeat;
     background-position: center;
     background-size: cover; */
+
+    margin: 0px 5px 10px 5px;
+    height: 200px;
+    width: calc(50% - 10px) !important;
 
     /* Vertically aligning text */
     display: flex;
@@ -325,10 +329,6 @@ header nav ul li a {
 
     /* Not working atm */
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-}
-
-.box-link {
-
 }
 
 .box-img {
@@ -359,13 +359,17 @@ header nav ul li a {
 }
 
 @media only screen and (min-width: 1000px) {
+    .experience {
+        height: 100vh;
+    }
+    
     .wrapper {
         width: 1000px;
         margin: 0 auto;
     }
 
     .box {
-        margin: 20px 10px 20px 0;
+        margin: 0px 5px 40px 5px;
         height: 230px;
         width: 230px !important;
     }
