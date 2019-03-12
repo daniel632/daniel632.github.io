@@ -291,24 +291,50 @@ header nav ul li a {
 .experience p {
     font-family: Catamaran;
     font-size: 20px;
-    /* font-weight: 200px; */
     color: #111;
     line-height: 40px;
-    /* visibility: hidden; */
 }
 
-.boxlink {
+.projects, .organisations {
     display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+    width: 240px;
+    background-color: #fff;
+
+    /* margin: 16px 16px 0; */
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+
+    /* Vertically aligning text */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 16px 16px 0;
-    width: calc(100% - 32px);
-    height: 200px;
-    background-color: #f2f2f2;
 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    /* Not working atm */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.box-link {
+
+}
+
+.box-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transition: .5s ease;
+    border-radius: .25rem;
 }
 
 .experience h4 {
@@ -320,13 +346,11 @@ header nav ul li a {
     text-transform: uppercase;
     line-height: 50px;
     word-wrap: break-word;
-    visibility: hidden;
-}
+    opacity: 0;
+    transition: .5s ease;
 
-.projects, .organisations {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
+    z-index: 2;
+    position: relative;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -335,22 +359,19 @@ header nav ul li a {
         margin: 0 auto;
     }
 
-    .experience {
-        overflow: hidden; /* fix 'bug' again */
-    }
-
-    .boxlink {
+    .box {
         margin: 20px 10px 20px 0;
         height: 230px;
         width: 230px !important;
     }
 
-    .boxlink:hover > h4 {
-        visibility: visible;
+    /* When hovering, make text visible and img lighter */
+    .box-link:hover > h4 {
+        opacity: 1;
     }
 
-    .boxlink:hover {
-        opacity: 0.25;
+    .box-link:hover > .box-img {
+        opacity: 0.1;
     }
 }
 
