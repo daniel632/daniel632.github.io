@@ -128,6 +128,7 @@ header {
     opacity: 0.9;
     width: 100%;
     height: 100px;
+    z-index: 10;
 }
 
 header .header-brand {
@@ -311,11 +312,6 @@ header nav ul li a {
     position: relative;
     overflow: hidden;
     background-color: #fff;
-
-    /* margin: 16px 16px 0; */
-    /* background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
 
     margin: 0px 5px 10px 5px;
     height: 200px;
