@@ -131,7 +131,7 @@ header {
 }
 
 header .header-brand {
-    font-family: Catamaran;
+    font-family: Overpass;
     font-size: 24px;
     color: #111;    /* completely black fonts can be overpowering */
     font-weight: 900;
@@ -157,7 +157,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    font-family: Catamaran;
+    font-family: Overpass;
     font-size: 16px;
     color: #111;
     text-transform: uppercase;
@@ -227,23 +227,28 @@ header nav ul li a {
 }
 
 .about h2 {
-    font-family: Catamaran;
+    font-family: Overpass;
     font-size: 60px;
     font-weight: 900;
     color: #fff;
     text-align: center;
-    text-shadow: 2px 2px 8px #111; /* make text stand out more */
+
+    /* make text stand out more */
+    text-shadow: 2px 2px 8px #111;
+
     line-height: 140px;
 }
 
 .about h1 {
     margin: 0 10px;
-    font-family: Catamaran;
+    font-family: Overpass;
     font-size: 28px;
     font-weight: 100;
     color: #fff;
     text-align: center;
-    text-shadow: 2px 2px 8px #111; /* make text stand out more */
+
+    text-shadow: 2px 2px 8px #111;
+
     line-height: 40px;
 }
 
@@ -267,29 +272,29 @@ header nav ul li a {
 }
 
 .experience h2 {
-    font-family: Catamaran;
+    font-family: Overpass;
     font-size: 60px;
     font-weight: 900;
     color: #111;
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 2px 2px 8px #fff;
+    /* text-shadow: 2px 2px 8px #fff; */
     line-height: 140px;
 }
 
 .experience h3 {
-    font-family: Catamaran;
+    font-family: Overpass;
     font-size: 45px;
     font-weight: 900;
     color: #111;
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 2px 2px 8px #fff;
+    /* text-shadow: 2px 2px 8px #fff; */
     line-height: 70px;
 }
 
 .experience p {
-    font-family: Catamaran;
+    font-family: Overpass;
     font-size: 20px;
     color: #111;
     line-height: 40px;
@@ -338,7 +343,7 @@ header nav ul li a {
 }
 
 .experience h4 {
-    font-family: Catamaran;
+    font-family: Overpass;
     font-size: 28px;
     font-weight: 900;
     color: #111;
@@ -376,6 +381,20 @@ header nav ul li a {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*****************************************************************************/
 
 
@@ -386,7 +405,7 @@ header nav ul li a {
 }
 
 .cases-links h2 {
-    font-family: Catamaran;
+    font-family: Overpass;
     font-size: 28px;
     font-weight: 900;
     color: #111;
@@ -404,7 +423,7 @@ header nav ul li a {
 
 .cases-links .cases-link p {
     padding-top: 45%;
-    font-family: Catamaran;
+    font-family: Overpass;
     font-size: 24px;
     font-weight: 900;
     color: #111;
@@ -425,7 +444,7 @@ header nav ul li a {
 
 /*** CASE ***/
 .case-vid h2 {
-    font-family: Catamaran;
+    font-family: Overpass;
     font-size: 28px;
     font-weight: 900;
     color: #111;
@@ -441,7 +460,7 @@ header nav ul li a {
 }
 
 .case-vid article h3 {
-    font-family: Catamaran;
+    font-family: Overpass;
     font-size: 28px;
     font-weight: 900;
     color: #111;
@@ -450,7 +469,7 @@ header nav ul li a {
 }
 
 .case-vid article p {
-    font-family: Catamaran;
+    font-family: Overpass;
     font-size: 16px;
     font-weight: 600;
     color: #111;
@@ -461,7 +480,7 @@ header nav ul li a {
 
 /****** GALLERY *****/
 .gallery-links-h2 {
-    font-family: Catamaran;
+    font-family: Overpass;
     font-size: 28px;
     font-weight: 600;
     color: #111;
